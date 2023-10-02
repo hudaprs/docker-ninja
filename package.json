@@ -1,0 +1,23 @@
+{
+  "name": "docker-ninja",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hudaprs/docker-ninja.git",
+  "author": "Huda Prasetyo <real.hudaprasetyo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,html,css,json}": [
+      "yarn prettier --write"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
